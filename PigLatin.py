@@ -13,10 +13,6 @@ def main():
     
     originalWord = input("Input an English word to translate to pig latin: ")
     
-    #create a variable to hold the length of the original word
-    
-    numLetter = len(originalWord)
-    
     #create a variable to hold the translated word and Initialize it with an empty string
     
     transWord = ""
@@ -30,7 +26,7 @@ def main():
     if firstLetter in Vowels:
         transWord = originalWord + "yay"
     else: 
-        transWord = originalWord[1:numLetter] + firstLetter + "ay"
+        transWord = originalWord[1:] + firstLetter + "ay"
         
     print(transWord)
 main()
